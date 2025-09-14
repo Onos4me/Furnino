@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FURNINO</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat';
+        }
+
+        body * {
+            list-style-type: none;
+            text-decoration: none;
+        }
+
+        img,
+        button,
+        input {
+            display: block;
+            text-decoration: none;
+        }
+
+        nav {
+            height: 20px;
+            width: 1550px;
+            background: whitesmoke;
+            text-align: center;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 35px;
+
+            img {
+                height: 28px;
+                margin-top: px;
+            }
+        }
+
+        .nav1 {
+            width: 40vw;
+            text-align: center;
+            display: flex;
+            justify-content: space-evenly;
+            border-bottom: 3px red;
+
+            a {
+                color: #000000;
+                font-weight: 550;
+            }
+        }
+
+        .nav2 {
+            width: 25vw;
+            text-align: center;
+            display: flex;
+            justify-content: space-evenly;
+
+            a {
+                color: #000000;
+            }
+        }
+
+        .del {
+            background-image: url(./picture/scandinavian-interior-mockup-wall-decal-background\ 1.png);
+            height: 780px;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            a {
+                color: white;
+            }
+
+            .othertx {
+
+                color: white;
+                line-height: 30px;
+
+            }
+
+
+
+        }
+
+        .text {
+            color: white;
+            font-size: 54px;
+            font-weight: 600;
+            line-height: 140px;
+        }
+
+        .discover {
+            height: 495px;
+            width: 670px;
+            background-color: #FFF3E3;
+            position: absolute;
+            right: 50px;
+            bottom: 10px;
+            border-radius: 10px;
+        }
+
+        .txt {
+            text-align: left;
+            margin-left: 60px;
+
+            button {
+                height: 75px;
+                width: 220px;
+                background-color: #B88E2F;
+                color: white;
+                border: 0px;
+                margin-top: 40px;
+            }
+
+            h1 {
+                line-height: 30px;
+                font-size: 52px;
+                color: #B88E2F;
+            }
+
+            p {
+                margin-top: 60px;
+                color: #333333;
+                font-weight: 600;
+            }
+
+            span {
+                line-height: 30px;
+                color: #333333;
+                font-weight: 600;
+            }
+        }
+
+        .browse {
+            height: 770px;
+            width: 1250px;
+            margin: auto;
+            margin-top: 80px;
+
+        }
+
+        .ins {
+            height: 100px;
+            width: 600px;
+            margin: auto;
+            margin-bottom: 80px;
+
+        }
+
+        .firstpic {
+            height: 520px;
+            display: flex;
+            justify-content: space-evenly;
+            object-fit: contain;
+
+            img {
+                height: 510px;
+            }
+        }
+
+        .din {
+            display: flex;
+            justify-content: space-evenly;
+            height: 40px;
+            width: 1250px;
+            font-size: 15px;
+            font-weight: 500;
+
+        }
+
+        .produts {
+            height: 950px;
+            width: 1250px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+
+
+
+        }
+
+        .eight {
+            height: 430px;
+            width: 286px;
+            font-size: 16px;
+            background-color: #F4F5F7;
+
+            b {
+                margin-right: 25px;
+            }
+
+            p {
+                color: #898989;
+            }
+
+
+
+        }
+
+        .stroke {
+            text-decoration: line-through;
+        }
+
+        .im {
+            height: 290px;
+            background-color: black;
+            background-image: url(./picture/image\ 1.png);
+            background-size: contain;
+        }
+
+        .pic1 {
+            background-image: url(./picture/image\ 2.png);
+            background-size: contain;
+        }
+
+        .pic2 {
+            background-image: url(./picture/image\ 3.png);
+            background-size: contain;
+        }
+
+        .pic3 {
+            background-image: url(./picture/image\ 4.png);
+            background-size: contain;
+        }
+
+        .pic4 {
+            background-image: url(./picture/image\ 9.png);
+            background-size: contain;
+        }
+
+        .pic5 {
+            background-image: url(./picture/image\ 6.png);
+            background-size: contain;
+        }
+
+        .pic6 {
+            background-image: url(./picture/image\ 7.png);
+            background-size: contain;
+        }
+
+        .pic7 {
+            background-image: url(./picture/image\ 8\ \(1\).png);
+            background-size: contain;
+        }
+
+        .eight h2,
+        .eight p,
+        .eight span {
+            margin-left: 18px;
+            color: #3A3A3A;
+        }
+
+        .discount {
+            height: 60px;
+            width: 60px;
+            background-color: #B88E2F;
+            border-radius: 50%;
+            float: right;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            margin-right: 30px;
+
+        }
+
+        .showmore {
+            height: 60px;
+            width: 1250px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+
+            button {
+                height: 49px;
+                width: 245px;
+                color: #B88E2F;
+                border: 1px solid #B88E2F;
+                font-size: 17px;
+                font-weight: 700;
+
+            }
+        }
+
+        .fifty {
+            height: 620px;
+            width: 1250px;
+            background-color: #FCF8F3;
+            margin: auto;
+            display: flex;
+
+        }
+
+        .numone {
+            height: 620px;
+            width: 480px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            button{
+                height: 50px;
+                width: 200px;
+                background-color: #B88E2F;
+                font-weight: 600;
+                margin-left: -135px;
+                border: none;
+                margin-top: 30px;
+                color: white;
+            }
+        }
+
+        .numtwo {
+            height: 620px;
+            width: 400px;
+            background-image: url(./picture/394a75bc77d8a98d7cff3b010ba29ad5b60844d7.png);
+            background-size: contain;
+            margin-right: 20px;
+        }
+
+        .numthree {
+            height: 620px;
+            width: 430px;
+        }
+
+        .inside1 {
+            height: 500px;
+            width: 400px;
+            background-image: url(./picture/e8ee1dc9413c23f2d7371be94a52ea9020db45cc.png);
+            background-size: contain;
+            justify-items: center;
+            align-content: center;
+            
+        }
+
+        .inside2 {
+            height: 120px;
+            width: 400px;
+            background-color: aqua;
+        }
+        .ary{
+            height: 46px;
+            width: 46px;
+            background-color:whitesmoke;
+            border-radius: 50%;
+            text-align: center;
+            position: relative;
+            left: 120px;
+            top: 80px;
+            h1{
+            padding: 5px;
+            color: #B88E2F; 
+            font-weight: 100;   
+            }
+             
+           
+            
+            
+            
+           
+        }
+
+        .niro {
+            height: 80px;
+            text-align: center;
+            position: relative;
+            top: 80px;
+
+            h3 {
+                font-weight: normal;
+                font-size: 20px;
+            }
+
+
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(14, 1fr);
+            grid-template-areas:
+                "grid1 grid2 grid2 grid2 grid2 grid3 grid3 grid3 grid4 grid4 grid4 grid5 grid5 grid5"
+                "grid1 grid2 grid2 grid2 grid2 grid3 grid3 grid3 grid4 grid4 grid4 grid5 grid5 grid5"
+                "grid1 grid2 grid2 grid2 grid2 grid3 grid3 grid3 grid4 grid4 grid4 grid5 grid5 grid5"
+                "grid1 grid2 grid2 grid2 grid2 grid3 grid3 grid3 grid4 grid4 grid4 grid5 grid5 grid5"
+                "grid1 grid2 grid2 grid2 grid2 grid3 grid3 grid3 grid4 grid4 grid4 grid5 grid5 grid5"
+                "grid6 grid6 grid7 grid7 grid7 grid3 grid3 grid3 grid8 grid8 grid9 grid9 grid9 grid9"
+                "grid6 grid6 grid7 grid7 grid7 grid3 grid3 grid3 grid8 grid8 grid9 grid9 grid9 grid9"
+                "grid6 grid6 grid7 grid7 grid7 grid3 grid3 grid3 grid8 grid8 grid9 grid9 grid9 grid9"
+            ;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .grid img {
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .grid1 img {
+            height: 100%;
+        }
+
+        .grid2 img {
+            height: 80%;
+            position: relative;
+            top: 95px;
+        }
+
+        .grid3 img {
+            height: 60%;
+            position: relative;
+            top: 150px;
+        }
+
+        .grid4 img {
+            height: 80%;
+            position: relative;
+            top: 95px;
+        }
+
+        .grid5 img {
+            height: 100%;
+        }
+
+        .grid6 img {
+            height: 100%;
+        }
+
+        .grid7 img {
+            height: 80%;
+        }
+
+        .grid8 img {
+            height: 100%;
+        }
+
+        .grid9 img {
+            height: 80%;
+            width: 80%;
+        }
+
+
+        .grid1 {
+            grid-area: grid1;
+        }
+
+        .grid2 {
+            grid-area: grid2;
+        }
+
+        .grid3 {
+            grid-area: grid3;
+        }
+
+        .grid4 {
+            grid-area: grid4;
+        }
+
+        .grid5 {
+            grid-area: grid5;
+        }
+
+        .grid6 {
+            grid-area: grid6;
+        }
+
+        .grid7 {
+            grid-area: grid7;
+        }
+
+        .grid8 {
+            grid-area: grid8;
+        }
+
+        .grid9 {
+            grid-area: grid9;
+        }
+
+
+        .footer {
+            background-color: white;
+            width: 85%;
+            padding: 60px 40px 40px;
+            border-top: 1px solid #e5e5e5;
+            margin: auto;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 80px;
+            margin-bottom: 60px;
+        }
+
+        .footer-section h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 18px;
+        }
+
+        .footer-section ul li a {
+            color: #666;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: #333;
+        }
+
+        .company-info {
+            color: #999;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .company-info .brand {
+            color: #333;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .newsletter {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .newsletter-input {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .newsletter input {
+            flex: 1;
+            padding: 12px 16px;
+            border: 1px solid #ddd;
+            border-right: none;
+            border-radius: 4px 0 0 4px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .newsletter input:focus {
+            border-color: #333;
+        }
+
+        .newsletter input::placeholder {
+            color: #999;
+        }
+
+        .newsletter button {
+            padding: 12px 24px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .newsletter button:hover {
+            background-color: #222;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #e5e5e5;
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .windows-activation {
+            color: #999;
+            font-size: 12px;
+            text-align: right;
+        }
+
+        .windows-activation .title {
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+    </style>
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <span><img src="./picture/Meubel House_Logos-05.png" alt=""></span>
+            <span style="font-size: 34px; font-weight: bolder; margin-left: -80px; margin-top: -8px;">Furniro</span>
+            <div class="nav1">
+                <span><a href="">Home</a></span>
+                <span><a href="">Shop </a></span>
+                <span><a href="">About</a></span>
+                <span><a href="">Contact</a></span>
+            </div>
+            <div class="nav2">
+                <span><a href=""><i class="fa-regular fa-user"></i> !</a></span>
+                <span><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></span>
+                <span><a href=""><i class="fa-regular fa-heart"></i></a></span>
+                <span><a href=""><i class="fa-solid fa-cart-shopping"></i> </a></span>
+
+            </div>
+        </nav>
+        <div class="del">
+            <div class="discover">
+                <div class="txt">
+                    <p>New Arrival</p>
+                    <h1>Discover Our</h1>
+                    <h1>New Collection</h1>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                        Ut elit tellus, luctus nec ullamcorper mattis.</span>
+                    <button>BUY NOW</button>
+                </div>
+
+
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="browse">
+            <div class="ins">
+                <h1 style="text-align: center; font-weight: 700;">Browse The Range</h1>
+                <h3 style="text-align: center; font-weight: 600;">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.</h3>
+
+            </div>
+            <div class="firstpic">
+                <img src="./picture/Mask Group.png" alt="">
+                <img src="./picture/Image-living room.png" alt="">
+                <img src="./picture/Mask Group (1).png" alt="">
+
+            </div>
+            <div class="din">
+                <h2 style="margin-left: px; margin-right: 190px;">Dining</h2>
+                <h2 style="margin-right: 190px;">Living</h2>
+                <h2>Bedroom</h2>
+
+            </div>
+
+        </div>
+        <div class="produts">
+            <div class="eight">
+                <div class="im">
+                    <div class="discount">-30%</div>
+                </div>
+                <h2>Syltherine</h2>
+                <p>Stylish cafe chair</p>
+                <span><b>Rp 2.500.000</b><span class="stroke">Rp 3.500.000</span></span>
+
+            </div>
+            <div class="eight">
+                <div class="im pic1">
+
+                </div>
+                <h2>Syltherine</h2>
+                <p>Stylish cafe chair</p>
+                <span><b>Rp 2.500.000</b></span>
+            </div>
+            <div class="eight">
+                <div class="im pic2">
+                    <div class="discount">-30%</div>
+                </div>
+                <h2>Syltherine</h2>
+                <p>Stylish cafe chair</p>
+                <span><b>Rp 2.500.000</b><span class="stroke">Rp 3.500.000</span></span>
+            </div>
+            <div class="eight">
+                <div class="im pic3">
+                    <div class="discount">-30%</div>
+                </div>
+                <h2>Syltherine</h2>
+                <p>Stylish cafe chair</p>
+                <span><b>Rp 2.500.000</b></span>
+            </div>
+            <div class="eight">
+                <div class="im pic4">
+
+                </div>
+                <h2>Syltherine</h2>
+                <p>Stylish cafe chair</p>
+                <span><b>Rp 2.500.000</b></span>
+
+            </div>
+            <div class="eight">
+                <div class="im pic5">
+                    <div class="discount">-30%</div>
+                </div>
+                <h2>Syltherine</h2>
+                <p>Stylish cafe chair</p>
+                <span><b>Rp 2.500.000</b></span>
+            </div>
+            <div class="eight">
+                <div class="im pic6">
+                    <div class="discount">-30%</div>
+                </div>
+                <h2>Syltherine</h2>
+                <p>Stylish cafe chair</p>
+                <span><b>Rp 2.500.000</b><span class="stroke">Rp 3.500.000</span></span>
+            </div>
+            <div class="eight">
+                <div class="im pic7">
+                    <div class="discount">-30%</div>
+                </div>
+                <h2>Syltherine</h2>
+                <p>Stylish cafe chair</p>
+                <span><b>Rp 2.500.000</b></span>
+
+            </div>
+        </div>
+
+
+        </div>
+        <div class="showmore">
+            <button>Show More</button>
+
+        </div>
+        <div class="fifty">
+            <div class="numone">
+                <h1>50+ Beautiful rooms <br>
+                    inspiration</h1>
+                <p style="color: #616161;">Our designer already made a lot of beautiful <br>
+                    prototipe of rooms that inspire you</p>
+                <button>Explore More</button>
+            </div>
+            <div class="numtwo">
+               
+            </div>
+            <div class="numthree">
+                 <div class="inside1">
+                    <div class="ary">
+                            <h1>></h1>
+                    </div>
+                 </div>
+                <div class="inside2"></div>
+
+            </div>
+
+        </div>
+        <div class="niro">
+            <h3>Share your setup with</h3>
+            <h1>#FuniroFURNITURE</h1>
+        </div>
+
+    </main>
+
+    <section class="grid">
+
+        <div class="grid1"><img src="./picture/image 1.png" alt=""></div>
+        <div class="grid2"><img src="./picture/image 2.png" alt=""></div>
+        <div class="grid3"><img src="./picture/image 3.png" alt=""></div>
+        <div class="grid4"><img src="./picture/image 4.png" alt=""></div>
+        <div class="grid5"><img src="./picture/image 9.png" alt=""></div>
+        <div class="grid6"><img src="./picture/image 6.png" alt=""></div>
+        <div class="grid7"><img src="./picture/image 7.png" alt=""></div>
+        <div class="grid8"><img src="./picture/image 8.png" alt=""></div>
+        <div class="grid9"><img src="./picture/image 9.png" alt=""></div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="company-info">
+                    <span class="brand">Funiro.</span>
+                    400 University Drive Suite 200 Coral Gables,<br>
+                    FL 33134 USA
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">Payment Options</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Privacy Policies</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section newsletter">
+                <h3>Newsletter</h3>
+                <div class="newsletter-input">
+                    <input type="email" placeholder="Enter Your Email Address">
+                    <button type="submit">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div>2025 funiro. All rights reverved</div>
+            <div class="windows-activation">
+                <div class="title">Activate Windows</div>
+                <div>Go to Settings to activate Windows</div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
