@@ -27,7 +27,7 @@
         nav {
             height: 20px;
             width: 1550px;
-            background: whitesmoke;
+            background: #FFFFFF;
             text-align: center;
             display: flex;
             justify-content: space-evenly;
@@ -200,6 +200,10 @@
             p {
                 color: #898989;
             }
+            span{
+                font-size: 16px;
+                font-weight: 600;
+            }
 
 
 
@@ -261,7 +265,7 @@
         .discount {
             height: 60px;
             width: 60px;
-            background-color: #B88E2F;
+            background-color: #E97171;
             border-radius: 50%;
             float: right;
             display: flex;
@@ -296,6 +300,7 @@
             background-color: #FCF8F3;
             margin: auto;
             display: flex;
+            margin-top: 40px;
 
         }
 
@@ -307,7 +312,8 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            button{
+
+            button {
                 height: 50px;
                 width: 200px;
                 background-color: #B88E2F;
@@ -322,7 +328,7 @@
         .numtwo {
             height: 620px;
             width: 400px;
-            background-image: url(./picture/394a75bc77d8a98d7cff3b010ba29ad5b60844d7.png);
+            background-image: url(./picture/Rectangle\ 24.png);
             background-size: contain;
             margin-right: 20px;
         }
@@ -330,43 +336,136 @@
         .numthree {
             height: 620px;
             width: 430px;
+
         }
 
         .inside1 {
             height: 500px;
             width: 400px;
-            background-image: url(./picture/e8ee1dc9413c23f2d7371be94a52ea9020db45cc.png);
+            background-image: url(./picture/chair.png);
             background-size: contain;
             justify-items: center;
             align-content: center;
-            
+
         }
 
         .inside2 {
             height: 120px;
             width: 400px;
-            background-color: aqua;
+
+
+
         }
-        .ary{
+
+        .dot-wrapper {
+            width: 24px;
+            height: 24px;
+            border: 2px solid #b8860b;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #b8860b;
+            display: flex;
+
+        }
+
+
+        .inactive {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #D8D8D8;
+            display: flex;
+            flex-direction: row;
+            margin-top: 7px;
+
+        }
+
+        .ary {
             height: 46px;
             width: 46px;
-            background-color:whitesmoke;
+            background-color: #D8D8D8;
             border-radius: 50%;
             text-align: center;
             position: relative;
             left: 120px;
             top: 80px;
-            h1{
-            padding: 5px;
-            color: #B88E2F; 
-            font-weight: 100;   
+
+            h1 {
+                padding: 5px;
+                color: #B88E2F;
+                font-weight: 100;
             }
-             
-           
-            
-            
-            
-           
+
+
+
+
+
+
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #fff;
+            padding: 20px 25px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 150px;
+            position: relative;
+            top: 420px;
+            left: 20px;
+            height: 120px;
+        }
+
+        .card-text {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .card-text small {
+            color: #777;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        .card-text h2 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+            color: #222;
+        }
+
+        .card-button {
+            background: #c59d5f;
+            border: none;
+            padding: 12px;
+            cursor: pointer;
+            position: relative;
+            top: 371px;
+            left: 219px;
+            height: 50px;
+            width: 50px;
+
+        }
+
+        .card-button:hover {
+            background: #a8834d;
+        }
+
+        .card-button::before {
+            content: "➝";
+            font-size: 16px;
+            color: #fff;
         }
 
         .niro {
@@ -503,9 +602,10 @@
 
         .footer-section h3 {
             font-size: 18px;
-            font-weight: 600;
+            font-weight: 500;
             color: #333;
             margin-bottom: 30px;
+            margin-left: 40px;
         }
 
         .footer-section ul {
@@ -513,14 +613,15 @@
         }
 
         .footer-section ul li {
-            margin-bottom: 18px;
+            margin-bottom: 30px;
         }
 
         .footer-section ul li a {
             color: #666;
             text-decoration: none;
             font-size: 16px;
-            transition: color 0.3s ease;
+            font-weight: 600;
+
         }
 
         .footer-section ul li a:hover {
@@ -549,6 +650,9 @@
         .newsletter-input {
             display: flex;
             margin-top: 10px;
+            border: 0px;
+
+
         }
 
         .newsletter input {
@@ -558,6 +662,16 @@
             border-right: none;
             border-radius: 4px 0 0 4px;
             font-size: 16px;
+            outline: 0;
+        }
+
+        input[placeholder="Enter Your Email Address"] {
+            border: none;
+            outline: none;
+        }
+
+        .email-input {
+            border: none;
             outline: none;
         }
 
@@ -571,14 +685,11 @@
 
         .newsletter button {
             padding: 12px 24px;
-            background-color: #333;
-            color: white;
+            color: black;
             border: none;
-            border-radius: 0 4px 4px 0;
+            outline: none;
             font-size: 14px;
             font-weight: 600;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
         }
 
         .newsletter button:hover {
@@ -691,52 +802,52 @@
             </div>
             <div class="eight">
                 <div class="im pic2">
-                    <div class="discount">-30%</div>
+                    <div class="discount">-50%</div>
                 </div>
-                <h2>Syltherine</h2>
-                <p>Stylish cafe chair</p>
-                <span><b>Rp 2.500.000</b><span class="stroke">Rp 3.500.000</span></span>
+                <h2>Lolito</h2>
+                <p>Luxury big sofa</p>
+                <span><b>Rp 7.000.000</b><span class="stroke">Rp 3.500.000</span></span>
             </div>
             <div class="eight">
                 <div class="im pic3">
-                    <div class="discount">-30%</div>
+                    <div class="discount" style="background: #2EC1AC;">New</div>
                 </div>
-                <h2>Syltherine</h2>
-                <p>Stylish cafe chair</p>
-                <span><b>Rp 2.500.000</b></span>
+                <h2>Respira</h2>
+                <p>Outdoor bar table and stool</p>
+                <span><b>Rp 500.000</b></span>
             </div>
             <div class="eight">
                 <div class="im pic4">
 
                 </div>
-                <h2>Syltherine</h2>
-                <p>Stylish cafe chair</p>
-                <span><b>Rp 2.500.000</b></span>
+                <h2>Grifo</h2>
+                <p>Night lamp</p>
+                <span><b>Rp 1.500.000</b></span>
 
             </div>
             <div class="eight">
                 <div class="im pic5">
-                    <div class="discount">-30%</div>
+                    <div class="discount" style="background: #2EC1AC;">New</div>
                 </div>
-                <h2>Syltherine</h2>
-                <p>Stylish cafe chair</p>
-                <span><b>Rp 2.500.000</b></span>
+                <h2>Muggo</h2>
+                <p>Small mug</p>
+                <span><b>Rp 150.000</b></span>
             </div>
             <div class="eight">
                 <div class="im pic6">
-                    <div class="discount">-30%</div>
+                    <div class="discount">-50%</div>
                 </div>
-                <h2>Syltherine</h2>
-                <p>Stylish cafe chair</p>
-                <span><b>Rp 2.500.000</b><span class="stroke">Rp 3.500.000</span></span>
+                <h2>Pingky</h2>
+                <p>Cute bed set</p>
+                <span><b>Rp 7.000.000</b><span class="stroke">Rp 3.500.000</span></span>
             </div>
             <div class="eight">
                 <div class="im pic7">
-                    <div class="discount">-30%</div>
+                    <div class="discount" style="background: #2EC1AC;">New</div>
                 </div>
-                <h2>Syltherine</h2>
-                <p>Stylish cafe chair</p>
-                <span><b>Rp 2.500.000</b></span>
+                <h2>Potty</h2>
+                <p>Minimalist flower pot</p>
+                <span><b>Rp 500.000</b></span>
 
             </div>
         </div>
@@ -756,15 +867,31 @@
                 <button>Explore More</button>
             </div>
             <div class="numtwo">
-               
+                <div class="card">
+                    <div class="card-text">
+                        <small>01 —— Bed Room</small>
+                        <h2>Inner Peace</h2>
+                    </div>
+
+                </div>
+                <button class="card-button"></button>
             </div>
             <div class="numthree">
-                 <div class="inside1">
+                <div class="inside1">
                     <div class="ary">
-                            <h1>></h1>
+                        <h1>></h1>
                     </div>
-                 </div>
-                <div class="inside2"></div>
+                </div>
+                <div class="inside2">
+                    <div class="progress-dots" style=" display: flex; padding-top: 50px; gap: 25px;">
+                        <div class="dot-wrapper">
+                            <div class="dot"></div>
+                        </div>
+                        <div class="inactive"></div>
+                        <div class="inactive"></div>
+                        <div class="inactive"></div>
+                    </div>
+                </div>
 
             </div>
 
@@ -778,15 +905,15 @@
 
     <section class="grid">
 
-        <div class="grid1"><img src="./picture/image 1.png" alt=""></div>
-        <div class="grid2"><img src="./picture/image 2.png" alt=""></div>
-        <div class="grid3"><img src="./picture/image 3.png" alt=""></div>
-        <div class="grid4"><img src="./picture/image 4.png" alt=""></div>
-        <div class="grid5"><img src="./picture/image 9.png" alt=""></div>
-        <div class="grid6"><img src="./picture/image 6.png" alt=""></div>
-        <div class="grid7"><img src="./picture/image 7.png" alt=""></div>
-        <div class="grid8"><img src="./picture/image 8.png" alt=""></div>
-        <div class="grid9"><img src="./picture/image 9.png" alt=""></div>
+        <div class="grid1"><img src="./picture/Rectangle 36.png" alt=""></div>
+        <div class="grid2"><img src="./picture/Rectangle 38.png" alt=""></div>
+        <div class="grid3"><img src="./picture/dd.png" alt=""></div>
+        <div class="grid4"><img src="./picture/bedroom.png" alt=""></div>
+        <div class="grid5"><img src="./picture/Rectangle 45.png" alt=""></div>
+        <div class="grid6"><img src="./picture/cc.png" alt=""></div>
+        <div class="grid7"><img src="./picture/seven.png" alt=""></div>
+        <div class="grid8"><img src="./picture/wall.png" alt=""></div>
+        <div class="grid9"><img src="./picture/kit.png" alt=""></div>
     </section>
 
     <footer class="footer">
@@ -819,7 +946,7 @@
             </div>
 
             <div class="footer-section newsletter">
-                <h3>Newsletter</h3>
+                <h3 style="margin-left: -5px;">Newsletter</h3>
                 <div class="newsletter-input">
                     <input type="email" placeholder="Enter Your Email Address">
                     <button type="submit">SUBSCRIBE</button>
